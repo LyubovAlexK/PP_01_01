@@ -1,0 +1,15 @@
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\bin\Debug\Repair_of_quipment_Kremlakova.exe.config
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\bin\Debug\Repair_of_quipment_Kremlakova.exe
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\bin\Debug\Repair_of_quipment_Kremlakova.pdb
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.csproj.AssemblyReference.cache
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.Form1.resources
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.Properties.Resources.resources
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.csproj.GenerateResource.cache
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.csproj.CoreCompileInputs.cache
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.exe
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.pdb
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.AE_Applications.resources
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.AE_Clients.resources
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.AE_Application_completion_report.resources
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.AE_Employee.resources
+C:\Users\Люба\Documents\тех\ПП 01.01\Repair_of_quipment\Repair_of_quipment_Kremlakova\obj\Debug\Repair_of_quipment_Kremlakova.AE_Users.resources
