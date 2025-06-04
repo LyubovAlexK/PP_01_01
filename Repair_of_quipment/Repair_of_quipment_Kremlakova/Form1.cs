@@ -50,7 +50,7 @@ namespace Repair_of_quipment_Kremlakova
                 table_panel.Visible = true;
                 regist_panel.Visible = false;
             }
-            else
+            if (data.exit==0)
             {
                 this.applicationsTableAdapter.Fill(this.repair_of_quipmentDataSet.Applications);
                 dataGridView1.DataSource = this.repair_of_quipmentDataSet.Applications;
@@ -63,12 +63,13 @@ namespace Repair_of_quipment_Kremlakova
                 custom_button_menu3.Visible = false;
                 custom_button_menu4.Visible = false;
                 custom_button_menu5.Visible = false;
+                custom_button_menu6.Visible = false;
                 label2.Visible = false;
                 label1.Visible = false;
                 tb_login.Text = "";
                 tb_password.Text = "";
             }
-            data.exit++;
+            if (regist_panel.Visible = true) data.exit++;
         }
 
         private void custom_button_menu1_Click(object sender, EventArgs e)
@@ -135,6 +136,7 @@ namespace Repair_of_quipment_Kremlakova
                         custom_button_menu3.Visible = true;
                         custom_button_menu4.Visible = true;
                         custom_button_menu5.Visible = true;
+                        custom_button_menu6.Visible = true;
                         label2.Visible = true;
                         label1.Visible = true;
                     }
@@ -148,6 +150,7 @@ namespace Repair_of_quipment_Kremlakova
                         custom_button_menu3.Visible = true;
                         custom_button_menu4.Visible = true;
                         custom_button_menu5.Visible = false;
+                        custom_button_menu6.Visible = false;
                         label2.Visible = true;
                         label1.Visible = true;
                     }
@@ -519,6 +522,42 @@ namespace Repair_of_quipment_Kremlakova
                         MessageBox.Show("Ошибка при подключении к базе данных!");
                     }
                     break;
+            }
+        }
+
+        private void custom_button_menu6_Click(object sender, EventArgs e)
+        {
+            string a, b, c;
+            statistic_panel.Visible = true;
+            table_panel.Visible = false;
+            regist_panel.Visible = false;
+
+            string connectionString = "Data Source=DESKTOP-3HK6G3K\\SQLEXPRESS;Initial Catalog=Repair_of_quipment;Integrated Security=True;User ID=Iam;Password=111";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Количество выполненных заданий
+                string query1 = "SELECT COUNT(*) FROM [Application_completion_report]";
+                SqlCommand cmd1 = new SqlCommand(query1, connection);
+                a = cmd1.ExecuteScalar().ToString();
+
+                // Среднее время выполненных заявок
+                string query2 = @"SELECT AVG(TRY_CAST(Lead_time AS FLOAT)) FROM [Application_completion_report] WHERE ISNUMERIC(Lead_time) = 1";
+
+                SqlCommand cmd2 = new SqlCommand(query2, connection);
+                object avgTime = cmd2.ExecuteScalar();
+                b = avgTime != DBNull.Value ? Math.Round(Convert.ToDouble(avgTime), 2).ToString() : "0";
+
+                string query3 = "SELECT COUNT(*) FROM Applications WHERE RTRIM(LTRIM(Type_of_malfunction)) = 'Электрическая'";
+                SqlCommand cmd3 = new SqlCommand(query3, connection);
+                c = cmd3.ExecuteScalar().ToString();
+                lb1.Text = "Количество заполненных заявок: "+a;
+                lb2.Text = "Среднее время выполнения заявок: "+b;
+                lb3.Text = "Количество электрических неисправностей: "+c+" в часах";
+
+                connection.Close();
             }
         }
     }

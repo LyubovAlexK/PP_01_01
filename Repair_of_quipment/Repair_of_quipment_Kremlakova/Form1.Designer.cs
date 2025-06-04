@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,14 +54,20 @@
             this.clientsTableAdapter = new Repair_of_quipment_Kremlakova.Repair_of_quipmentDataSetTableAdapters.ClientsTableAdapter();
             this.employeeTableAdapter = new Repair_of_quipment_Kremlakova.Repair_of_quipmentDataSetTableAdapters.EmployeeTableAdapter();
             this.table_panel = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.statistic_panel = new System.Windows.Forms.Panel();
+            this.lb2 = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lb3 = new System.Windows.Forms.Label();
             this.regist_panel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_password = new System.Windows.Forms.TextBox();
             this.tb_login = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.custom_button1 = new Repair_of_quipment_Kremlakova.Custom_button();
+            this.custom_button_menu6 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
             this.custom_button_menu5 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
             this.custom_button_menu4 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
             this.custom_button_menu3 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
@@ -90,8 +96,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.applicationcompletionreportBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             this.table_panel.SuspendLayout();
-            this.regist_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.statistic_panel.SuspendLayout();
+            this.regist_panel.SuspendLayout();
             this.gradient_panel_tabel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -103,7 +110,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(96, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(433, 34);
+            this.label4.Size = new System.Drawing.Size(340, 27);
             this.label4.TabIndex = 15;
             this.label4.Text = "АИС \"Ремонт оборудования\"";
             this.label4.Click += new System.EventHandler(this.Form1_Load);
@@ -117,7 +124,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1332, 60);
+            this.panel1.Size = new System.Drawing.Size(1334, 60);
             this.panel1.TabIndex = 17;
             // 
             // pictureBox1
@@ -134,6 +141,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
+            this.panel2.Controls.Add(this.custom_button_menu6);
             this.panel2.Controls.Add(this.custom_button_menu5);
             this.panel2.Controls.Add(this.custom_button_menu4);
             this.panel2.Controls.Add(this.custom_button_menu3);
@@ -144,7 +152,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(211, 643);
+            this.panel2.Size = new System.Drawing.Size(211, 651);
             this.panel2.TabIndex = 18;
             // 
             // label2
@@ -155,7 +163,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
             this.label2.Location = new System.Drawing.Point(3, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 34);
+            this.label2.Size = new System.Drawing.Size(113, 27);
             this.label2.TabIndex = 20;
             this.label2.Text = "Таблицы";
             // 
@@ -167,9 +175,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 45);
+            this.label1.Size = new System.Drawing.Size(218, 36);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Табл            ";
+            this.label1.Tag = "     ";
+            this.label1.Text = "Табл               ";
             // 
             // title_table
             // 
@@ -179,7 +188,7 @@
             this.title_table.ForeColor = System.Drawing.Color.Black;
             this.title_table.Location = new System.Drawing.Point(313, 4);
             this.title_table.Name = "title_table";
-            this.title_table.Size = new System.Drawing.Size(414, 48);
+            this.title_table.Size = new System.Drawing.Size(331, 39);
             this.title_table.TabIndex = 19;
             this.title_table.Text = "Название таблицы";
             // 
@@ -245,6 +254,71 @@
             this.table_panel.Size = new System.Drawing.Size(1077, 623);
             this.table_panel.TabIndex = 25;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // statistic_panel
+            // 
+            this.statistic_panel.BackColor = System.Drawing.Color.White;
+            this.statistic_panel.Controls.Add(this.lb3);
+            this.statistic_panel.Controls.Add(this.lb2);
+            this.statistic_panel.Controls.Add(this.lb1);
+            this.statistic_panel.Controls.Add(this.label9);
+            this.statistic_panel.Location = new System.Drawing.Point(329, 200);
+            this.statistic_panel.Name = "statistic_panel";
+            this.statistic_panel.Size = new System.Drawing.Size(926, 387);
+            this.statistic_panel.TabIndex = 29;
+            this.statistic_panel.Visible = false;
+            // 
+            // lb2
+            // 
+            this.lb2.AutoSize = true;
+            this.lb2.BackColor = System.Drawing.Color.White;
+            this.lb2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb2.ForeColor = System.Drawing.Color.Black;
+            this.lb2.Location = new System.Drawing.Point(20, 175);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(40, 29);
+            this.lb2.TabIndex = 24;
+            this.lb2.Text = "Т2";
+            // 
+            // lb1
+            // 
+            this.lb1.AutoSize = true;
+            this.lb1.BackColor = System.Drawing.Color.White;
+            this.lb1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb1.ForeColor = System.Drawing.Color.Black;
+            this.lb1.Location = new System.Drawing.Point(20, 113);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(40, 29);
+            this.lb1.TabIndex = 23;
+            this.lb1.Text = "Т1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(241, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(205, 39);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Статистика";
+            // 
+            // lb3
+            // 
+            this.lb3.AutoSize = true;
+            this.lb3.BackColor = System.Drawing.Color.White;
+            this.lb3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb3.ForeColor = System.Drawing.Color.Black;
+            this.lb3.Location = new System.Drawing.Point(20, 232);
+            this.lb3.Name = "lb3";
+            this.lb3.Size = new System.Drawing.Size(40, 29);
+            this.lb3.TabIndex = 25;
+            this.lb3.Text = "Т3\r\n";
+            // 
             // regist_panel
             // 
             this.regist_panel.BackColor = System.Drawing.Color.White;
@@ -254,7 +328,7 @@
             this.regist_panel.Controls.Add(this.tb_password);
             this.regist_panel.Controls.Add(this.tb_login);
             this.regist_panel.Controls.Add(this.label6);
-            this.regist_panel.Location = new System.Drawing.Point(470, 140);
+            this.regist_panel.Location = new System.Drawing.Point(470, 175);
             this.regist_panel.Name = "regist_panel";
             this.regist_panel.Size = new System.Drawing.Size(673, 387);
             this.regist_panel.TabIndex = 28;
@@ -267,7 +341,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(147, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 36);
+            this.label3.Size = new System.Drawing.Size(93, 29);
             this.label3.TabIndex = 24;
             this.label3.Text = "Пароль";
             // 
@@ -279,7 +353,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(147, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 36);
+            this.label5.Size = new System.Drawing.Size(80, 29);
             this.label5.TabIndex = 23;
             this.label5.Text = "Логин";
             // 
@@ -288,7 +362,7 @@
             this.tb_password.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tb_password.Location = new System.Drawing.Point(153, 223);
             this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(370, 35);
+            this.tb_password.Size = new System.Drawing.Size(370, 30);
             this.tb_password.TabIndex = 22;
             this.tb_password.UseSystemPasswordChar = true;
             this.tb_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_password_KeyPress);
@@ -298,7 +372,7 @@
             this.tb_login.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tb_login.Location = new System.Drawing.Point(151, 129);
             this.tb_login.Name = "tb_login";
-            this.tb_login.Size = new System.Drawing.Size(370, 35);
+            this.tb_login.Size = new System.Drawing.Size(370, 30);
             this.tb_login.TabIndex = 21;
             this.tb_login.TextChanged += new System.EventHandler(this.tb_login_TextChanged);
             // 
@@ -310,13 +384,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(284, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 48);
+            this.label6.Size = new System.Drawing.Size(99, 39);
             this.label6.TabIndex = 20;
             this.label6.Text = "Вход";
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // custom_button1
             // 
@@ -333,6 +403,21 @@
             this.custom_button1.Text = "Войти";
             this.custom_button1.UseVisualStyleBackColor = false;
             this.custom_button1.Click += new System.EventHandler(this.custom_button1_Click);
+            // 
+            // custom_button_menu6
+            // 
+            this.custom_button_menu6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu6.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu6.Location = new System.Drawing.Point(-1, 453);
+            this.custom_button_menu6.Name = "custom_button_menu6";
+            this.custom_button_menu6.Size = new System.Drawing.Size(224, 80);
+            this.custom_button_menu6.TabIndex = 25;
+            this.custom_button_menu6.Text = "Статистика";
+            this.custom_button_menu6.UseVisualStyleBackColor = true;
+            this.custom_button_menu6.Click += new System.EventHandler(this.custom_button_menu6_Click);
             // 
             // custom_button_menu5
             // 
@@ -486,21 +571,21 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeight = 45;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numberapplicationDataGridViewTextBoxColumn,
@@ -511,26 +596,26 @@
             this.idclientDataGridViewTextBoxColumn,
             this.statusapplicationDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.applicationsBindingSource;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(123)))), ((int)(((byte)(148)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.GhostWhite;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(123)))), ((int)(((byte)(148)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.GhostWhite;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
             this.dataGridView1.Location = new System.Drawing.Point(10, 28);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowHeadersWidth = 25;
             this.dataGridView1.RowTemplate.DividerHeight = 1;
             this.dataGridView1.RowTemplate.Height = 25;
@@ -601,8 +686,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.ClientSize = new System.Drawing.Size(1334, 711);
             this.Controls.Add(this.regist_panel);
+            this.Controls.Add(this.statistic_panel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.table_panel);
@@ -627,9 +713,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             this.table_panel.ResumeLayout(false);
             this.table_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.statistic_panel.ResumeLayout(false);
+            this.statistic_panel.PerformLayout();
             this.regist_panel.ResumeLayout(false);
             this.regist_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.gradient_panel_tabel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -684,6 +772,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idclientDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusapplicationDataGridViewTextBoxColumn;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Custom_button_menu custom_button_menu6;
+        private System.Windows.Forms.Panel statistic_panel;
+        private System.Windows.Forms.Label lb2;
+        private System.Windows.Forms.Label lb1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lb3;
     }
 }
 
