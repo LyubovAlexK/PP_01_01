@@ -36,9 +36,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exit_btn = new Repair_of_quipment_Kremlakova.Custom_button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.custom_button_menu6 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
+            this.custom_button_menu5 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
+            this.custom_button_menu4 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
+            this.custom_button_menu3 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
+            this.custom_button_menu2 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
             this.label2 = new System.Windows.Forms.Label();
+            this.custom_button_menu1 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.title_table = new System.Windows.Forms.Label();
@@ -54,26 +61,6 @@
             this.clientsTableAdapter = new Repair_of_quipment_Kremlakova.Repair_of_quipmentDataSetTableAdapters.ClientsTableAdapter();
             this.employeeTableAdapter = new Repair_of_quipment_Kremlakova.Repair_of_quipmentDataSetTableAdapters.EmployeeTableAdapter();
             this.table_panel = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.statistic_panel = new System.Windows.Forms.Panel();
-            this.lb2 = new System.Windows.Forms.Label();
-            this.lb1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lb3 = new System.Windows.Forms.Label();
-            this.regist_panel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tb_password = new System.Windows.Forms.TextBox();
-            this.tb_login = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.custom_button1 = new Repair_of_quipment_Kremlakova.Custom_button();
-            this.custom_button_menu6 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
-            this.custom_button_menu5 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
-            this.custom_button_menu4 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
-            this.custom_button_menu3 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
-            this.custom_button_menu2 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
-            this.custom_button_menu1 = new Repair_of_quipment_Kremlakova.Custom_button_menu();
-            this.exit_btn = new Repair_of_quipment_Kremlakova.Custom_button();
             this.add_btn = new Repair_of_quipment_Kremlakova.Custom_button();
             this.edit_btn = new Repair_of_quipment_Kremlakova.Custom_button();
             this.del_btn = new Repair_of_quipment_Kremlakova.Custom_button();
@@ -86,6 +73,19 @@
             this.problemdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idclientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusapplicationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.statistic_panel = new System.Windows.Forms.Panel();
+            this.lb3 = new System.Windows.Forms.Label();
+            this.lb2 = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.regist_panel = new System.Windows.Forms.Panel();
+            this.custom_button1 = new Repair_of_quipment_Kremlakova.Custom_button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.tb_login = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -96,11 +96,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.applicationcompletionreportBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             this.table_panel.SuspendLayout();
+            this.gradient_panel_tabel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.statistic_panel.SuspendLayout();
             this.regist_panel.SuspendLayout();
-            this.gradient_panel_tabel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -108,12 +108,13 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(96, 9);
+            this.label4.Location = new System.Drawing.Point(72, 7);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(340, 27);
             this.label4.TabIndex = 15;
             this.label4.Text = "АИС \"Ремонт оборудования\"";
-            this.label4.Click += new System.EventHandler(this.Form1_Load);
+            this.label4.Click += new System.EventHandler(this.regist);
             // 
             // panel1
             // 
@@ -123,20 +124,40 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1334, 60);
+            this.panel1.Size = new System.Drawing.Size(1000, 49);
             this.panel1.TabIndex = 17;
+            // 
+            // exit_btn
+            // 
+            this.exit_btn.BackColor = System.Drawing.Color.White;
+            this.exit_btn.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.exit_btn.FlatAppearance.BorderSize = 0;
+            this.exit_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_btn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exit_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            this.exit_btn.Location = new System.Drawing.Point(906, 6);
+            this.exit_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(86, 37);
+            this.exit_btn.TabIndex = 21;
+            this.exit_btn.Text = "Выход";
+            this.exit_btn.UseVisualStyleBackColor = false;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(34, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.Form1_Load);
+            this.pictureBox1.Click += new System.EventHandler(this.regist);
             // 
             // panel2
             // 
@@ -150,10 +171,91 @@
             this.panel2.Controls.Add(this.custom_button_menu1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 60);
+            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(211, 651);
+            this.panel2.Size = new System.Drawing.Size(158, 529);
             this.panel2.TabIndex = 18;
+            // 
+            // custom_button_menu6
+            // 
+            this.custom_button_menu6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu6.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu6.Location = new System.Drawing.Point(-1, 368);
+            this.custom_button_menu6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button_menu6.Name = "custom_button_menu6";
+            this.custom_button_menu6.Size = new System.Drawing.Size(168, 65);
+            this.custom_button_menu6.TabIndex = 25;
+            this.custom_button_menu6.Text = "Статистика";
+            this.custom_button_menu6.UseVisualStyleBackColor = true;
+            this.custom_button_menu6.Click += new System.EventHandler(this.custom_button_menu6_Click);
+            // 
+            // custom_button_menu5
+            // 
+            this.custom_button_menu5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu5.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu5.Location = new System.Drawing.Point(-1, 301);
+            this.custom_button_menu5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button_menu5.Name = "custom_button_menu5";
+            this.custom_button_menu5.Size = new System.Drawing.Size(168, 65);
+            this.custom_button_menu5.TabIndex = 24;
+            this.custom_button_menu5.Text = "Пользователи";
+            this.custom_button_menu5.UseVisualStyleBackColor = true;
+            this.custom_button_menu5.Click += new System.EventHandler(this.custom_button_menu5_Click);
+            // 
+            // custom_button_menu4
+            // 
+            this.custom_button_menu4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu4.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu4.Location = new System.Drawing.Point(0, 235);
+            this.custom_button_menu4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button_menu4.Name = "custom_button_menu4";
+            this.custom_button_menu4.Size = new System.Drawing.Size(161, 65);
+            this.custom_button_menu4.TabIndex = 23;
+            this.custom_button_menu4.Text = "Сотрудники";
+            this.custom_button_menu4.UseVisualStyleBackColor = true;
+            this.custom_button_menu4.Click += new System.EventHandler(this.custom_button_menu4_Click);
+            // 
+            // custom_button_menu3
+            // 
+            this.custom_button_menu3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu3.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu3.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu3.Location = new System.Drawing.Point(-1, 168);
+            this.custom_button_menu3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button_menu3.Name = "custom_button_menu3";
+            this.custom_button_menu3.Size = new System.Drawing.Size(162, 65);
+            this.custom_button_menu3.TabIndex = 22;
+            this.custom_button_menu3.Text = "Отчеты";
+            this.custom_button_menu3.UseVisualStyleBackColor = true;
+            this.custom_button_menu3.Click += new System.EventHandler(this.custom_button_menu3_Click);
+            // 
+            // custom_button_menu2
+            // 
+            this.custom_button_menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu2.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu2.Location = new System.Drawing.Point(-1, 102);
+            this.custom_button_menu2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button_menu2.Name = "custom_button_menu2";
+            this.custom_button_menu2.Size = new System.Drawing.Size(162, 65);
+            this.custom_button_menu2.TabIndex = 21;
+            this.custom_button_menu2.Text = "Клиенты";
+            this.custom_button_menu2.UseVisualStyleBackColor = true;
+            this.custom_button_menu2.Click += new System.EventHandler(this.custom_button_menu2_Click);
             // 
             // label2
             // 
@@ -161,11 +263,28 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.label2.Location = new System.Drawing.Point(3, 4);
+            this.label2.Location = new System.Drawing.Point(2, 3);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 27);
             this.label2.TabIndex = 20;
             this.label2.Text = "Таблицы";
+            // 
+            // custom_button_menu1
+            // 
+            this.custom_button_menu1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.custom_button_menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button_menu1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button_menu1.ForeColor = System.Drawing.Color.White;
+            this.custom_button_menu1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.custom_button_menu1.Location = new System.Drawing.Point(-1, 35);
+            this.custom_button_menu1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button_menu1.Name = "custom_button_menu1";
+            this.custom_button_menu1.Size = new System.Drawing.Size(162, 65);
+            this.custom_button_menu1.TabIndex = 19;
+            this.custom_button_menu1.Text = "Заявки";
+            this.custom_button_menu1.UseVisualStyleBackColor = true;
+            this.custom_button_menu1.Click += new System.EventHandler(this.custom_button_menu1_Click);
             // 
             // label1
             // 
@@ -174,6 +293,7 @@
             this.label1.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 36);
             this.label1.TabIndex = 19;
@@ -186,7 +306,8 @@
             this.title_table.BackColor = System.Drawing.Color.White;
             this.title_table.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.title_table.ForeColor = System.Drawing.Color.Black;
-            this.title_table.Location = new System.Drawing.Point(313, 4);
+            this.title_table.Location = new System.Drawing.Point(235, 3);
+            this.title_table.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title_table.Name = "title_table";
             this.title_table.Size = new System.Drawing.Size(331, 39);
             this.title_table.TabIndex = 19;
@@ -249,267 +370,11 @@
             this.table_panel.Controls.Add(this.del_btn);
             this.table_panel.Controls.Add(this.title_table);
             this.table_panel.Controls.Add(this.gradient_panel_tabel1);
-            this.table_panel.Location = new System.Drawing.Point(243, 68);
+            this.table_panel.Location = new System.Drawing.Point(182, 55);
+            this.table_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.table_panel.Name = "table_panel";
-            this.table_panel.Size = new System.Drawing.Size(1077, 623);
+            this.table_panel.Size = new System.Drawing.Size(808, 506);
             this.table_panel.TabIndex = 25;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // statistic_panel
-            // 
-            this.statistic_panel.BackColor = System.Drawing.Color.White;
-            this.statistic_panel.Controls.Add(this.lb3);
-            this.statistic_panel.Controls.Add(this.lb2);
-            this.statistic_panel.Controls.Add(this.lb1);
-            this.statistic_panel.Controls.Add(this.label9);
-            this.statistic_panel.Location = new System.Drawing.Point(329, 200);
-            this.statistic_panel.Name = "statistic_panel";
-            this.statistic_panel.Size = new System.Drawing.Size(926, 387);
-            this.statistic_panel.TabIndex = 29;
-            this.statistic_panel.Visible = false;
-            // 
-            // lb2
-            // 
-            this.lb2.AutoSize = true;
-            this.lb2.BackColor = System.Drawing.Color.White;
-            this.lb2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb2.ForeColor = System.Drawing.Color.Black;
-            this.lb2.Location = new System.Drawing.Point(20, 175);
-            this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(40, 29);
-            this.lb2.TabIndex = 24;
-            this.lb2.Text = "Т2";
-            // 
-            // lb1
-            // 
-            this.lb1.AutoSize = true;
-            this.lb1.BackColor = System.Drawing.Color.White;
-            this.lb1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb1.ForeColor = System.Drawing.Color.Black;
-            this.lb1.Location = new System.Drawing.Point(20, 113);
-            this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(40, 29);
-            this.lb1.TabIndex = 23;
-            this.lb1.Text = "Т1";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(241, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(205, 39);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Статистика";
-            // 
-            // lb3
-            // 
-            this.lb3.AutoSize = true;
-            this.lb3.BackColor = System.Drawing.Color.White;
-            this.lb3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb3.ForeColor = System.Drawing.Color.Black;
-            this.lb3.Location = new System.Drawing.Point(20, 232);
-            this.lb3.Name = "lb3";
-            this.lb3.Size = new System.Drawing.Size(40, 29);
-            this.lb3.TabIndex = 25;
-            this.lb3.Text = "Т3\r\n";
-            // 
-            // regist_panel
-            // 
-            this.regist_panel.BackColor = System.Drawing.Color.White;
-            this.regist_panel.Controls.Add(this.custom_button1);
-            this.regist_panel.Controls.Add(this.label3);
-            this.regist_panel.Controls.Add(this.label5);
-            this.regist_panel.Controls.Add(this.tb_password);
-            this.regist_panel.Controls.Add(this.tb_login);
-            this.regist_panel.Controls.Add(this.label6);
-            this.regist_panel.Location = new System.Drawing.Point(470, 175);
-            this.regist_panel.Name = "regist_panel";
-            this.regist_panel.Size = new System.Drawing.Size(673, 387);
-            this.regist_panel.TabIndex = 28;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(147, 184);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 29);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Пароль";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(147, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 29);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Логин";
-            // 
-            // tb_password
-            // 
-            this.tb_password.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tb_password.Location = new System.Drawing.Point(153, 223);
-            this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(370, 30);
-            this.tb_password.TabIndex = 22;
-            this.tb_password.UseSystemPasswordChar = true;
-            this.tb_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_password_KeyPress);
-            // 
-            // tb_login
-            // 
-            this.tb_login.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tb_login.Location = new System.Drawing.Point(151, 129);
-            this.tb_login.Name = "tb_login";
-            this.tb_login.Size = new System.Drawing.Size(370, 30);
-            this.tb_login.TabIndex = 21;
-            this.tb_login.TextChanged += new System.EventHandler(this.tb_login_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(284, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 39);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Вход";
-            // 
-            // custom_button1
-            // 
-            this.custom_button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
-            this.custom_button1.FlatAppearance.BorderSize = 0;
-            this.custom_button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.custom_button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button1.ForeColor = System.Drawing.Color.White;
-            this.custom_button1.Location = new System.Drawing.Point(174, 308);
-            this.custom_button1.Name = "custom_button1";
-            this.custom_button1.Size = new System.Drawing.Size(323, 45);
-            this.custom_button1.TabIndex = 25;
-            this.custom_button1.Text = "Войти";
-            this.custom_button1.UseVisualStyleBackColor = false;
-            this.custom_button1.Click += new System.EventHandler(this.custom_button1_Click);
-            // 
-            // custom_button_menu6
-            // 
-            this.custom_button_menu6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.custom_button_menu6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button_menu6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button_menu6.ForeColor = System.Drawing.Color.White;
-            this.custom_button_menu6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.custom_button_menu6.Location = new System.Drawing.Point(-1, 453);
-            this.custom_button_menu6.Name = "custom_button_menu6";
-            this.custom_button_menu6.Size = new System.Drawing.Size(224, 80);
-            this.custom_button_menu6.TabIndex = 25;
-            this.custom_button_menu6.Text = "Статистика";
-            this.custom_button_menu6.UseVisualStyleBackColor = true;
-            this.custom_button_menu6.Click += new System.EventHandler(this.custom_button_menu6_Click);
-            // 
-            // custom_button_menu5
-            // 
-            this.custom_button_menu5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.custom_button_menu5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button_menu5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button_menu5.ForeColor = System.Drawing.Color.White;
-            this.custom_button_menu5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.custom_button_menu5.Location = new System.Drawing.Point(-1, 371);
-            this.custom_button_menu5.Name = "custom_button_menu5";
-            this.custom_button_menu5.Size = new System.Drawing.Size(224, 80);
-            this.custom_button_menu5.TabIndex = 24;
-            this.custom_button_menu5.Text = "Пользователи";
-            this.custom_button_menu5.UseVisualStyleBackColor = true;
-            this.custom_button_menu5.Click += new System.EventHandler(this.custom_button_menu5_Click);
-            // 
-            // custom_button_menu4
-            // 
-            this.custom_button_menu4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.custom_button_menu4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button_menu4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button_menu4.ForeColor = System.Drawing.Color.White;
-            this.custom_button_menu4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.custom_button_menu4.Location = new System.Drawing.Point(0, 289);
-            this.custom_button_menu4.Name = "custom_button_menu4";
-            this.custom_button_menu4.Size = new System.Drawing.Size(215, 80);
-            this.custom_button_menu4.TabIndex = 23;
-            this.custom_button_menu4.Text = "Сотрудники";
-            this.custom_button_menu4.UseVisualStyleBackColor = true;
-            this.custom_button_menu4.Click += new System.EventHandler(this.custom_button_menu4_Click);
-            // 
-            // custom_button_menu3
-            // 
-            this.custom_button_menu3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.custom_button_menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button_menu3.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button_menu3.ForeColor = System.Drawing.Color.White;
-            this.custom_button_menu3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.custom_button_menu3.Location = new System.Drawing.Point(-1, 207);
-            this.custom_button_menu3.Name = "custom_button_menu3";
-            this.custom_button_menu3.Size = new System.Drawing.Size(216, 80);
-            this.custom_button_menu3.TabIndex = 22;
-            this.custom_button_menu3.Text = "Отчеты";
-            this.custom_button_menu3.UseVisualStyleBackColor = true;
-            this.custom_button_menu3.Click += new System.EventHandler(this.custom_button_menu3_Click);
-            // 
-            // custom_button_menu2
-            // 
-            this.custom_button_menu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.custom_button_menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button_menu2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button_menu2.ForeColor = System.Drawing.Color.White;
-            this.custom_button_menu2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.custom_button_menu2.Location = new System.Drawing.Point(-1, 125);
-            this.custom_button_menu2.Name = "custom_button_menu2";
-            this.custom_button_menu2.Size = new System.Drawing.Size(216, 80);
-            this.custom_button_menu2.TabIndex = 21;
-            this.custom_button_menu2.Text = "Клиенты";
-            this.custom_button_menu2.UseVisualStyleBackColor = true;
-            this.custom_button_menu2.Click += new System.EventHandler(this.custom_button_menu2_Click);
-            // 
-            // custom_button_menu1
-            // 
-            this.custom_button_menu1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.custom_button_menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custom_button_menu1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.custom_button_menu1.ForeColor = System.Drawing.Color.White;
-            this.custom_button_menu1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.custom_button_menu1.Location = new System.Drawing.Point(-1, 43);
-            this.custom_button_menu1.Name = "custom_button_menu1";
-            this.custom_button_menu1.Size = new System.Drawing.Size(216, 80);
-            this.custom_button_menu1.TabIndex = 19;
-            this.custom_button_menu1.Text = "Заявки";
-            this.custom_button_menu1.UseVisualStyleBackColor = true;
-            this.custom_button_menu1.Click += new System.EventHandler(this.custom_button_menu1_Click);
-            // 
-            // exit_btn
-            // 
-            this.exit_btn.BackColor = System.Drawing.Color.White;
-            this.exit_btn.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.exit_btn.FlatAppearance.BorderSize = 0;
-            this.exit_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_btn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exit_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
-            this.exit_btn.Location = new System.Drawing.Point(1208, 7);
-            this.exit_btn.Name = "exit_btn";
-            this.exit_btn.Size = new System.Drawing.Size(115, 45);
-            this.exit_btn.TabIndex = 21;
-            this.exit_btn.Text = "Выход";
-            this.exit_btn.UseVisualStyleBackColor = false;
-            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
             // add_btn
             // 
@@ -519,9 +384,10 @@
             this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_btn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.add_btn.ForeColor = System.Drawing.Color.White;
-            this.add_btn.Location = new System.Drawing.Point(30, 563);
+            this.add_btn.Location = new System.Drawing.Point(22, 457);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(242, 45);
+            this.add_btn.Size = new System.Drawing.Size(182, 37);
             this.add_btn.TabIndex = 22;
             this.add_btn.Text = "Добавить запись";
             this.add_btn.UseVisualStyleBackColor = false;
@@ -535,9 +401,10 @@
             this.edit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.edit_btn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.edit_btn.ForeColor = System.Drawing.Color.White;
-            this.edit_btn.Location = new System.Drawing.Point(404, 563);
+            this.edit_btn.Location = new System.Drawing.Point(303, 457);
+            this.edit_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.edit_btn.Name = "edit_btn";
-            this.edit_btn.Size = new System.Drawing.Size(323, 45);
+            this.edit_btn.Size = new System.Drawing.Size(242, 37);
             this.edit_btn.TabIndex = 23;
             this.edit_btn.Text = "Редактировать запись";
             this.edit_btn.UseVisualStyleBackColor = false;
@@ -551,9 +418,10 @@
             this.del_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.del_btn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.del_btn.ForeColor = System.Drawing.Color.White;
-            this.del_btn.Location = new System.Drawing.Point(829, 563);
+            this.del_btn.Location = new System.Drawing.Point(622, 457);
+            this.del_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.del_btn.Name = "del_btn";
-            this.del_btn.Size = new System.Drawing.Size(223, 45);
+            this.del_btn.Size = new System.Drawing.Size(167, 37);
             this.del_btn.TabIndex = 24;
             this.del_btn.Text = "Удалить запись";
             this.del_btn.UseVisualStyleBackColor = false;
@@ -564,9 +432,10 @@
             this.gradient_panel_tabel1.ColorButton = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
             this.gradient_panel_tabel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
             this.gradient_panel_tabel1.Controls.Add(this.dataGridView1);
-            this.gradient_panel_tabel1.Location = new System.Drawing.Point(30, 55);
+            this.gradient_panel_tabel1.Location = new System.Drawing.Point(22, 45);
+            this.gradient_panel_tabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gradient_panel_tabel1.Name = "gradient_panel_tabel1";
-            this.gradient_panel_tabel1.Size = new System.Drawing.Size(1022, 495);
+            this.gradient_panel_tabel1.Size = new System.Drawing.Size(766, 402);
             this.gradient_panel_tabel1.TabIndex = 20;
             // 
             // dataGridView1
@@ -606,7 +475,8 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 23);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -620,7 +490,7 @@
             this.dataGridView1.RowTemplate.DividerHeight = 1;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 467);
+            this.dataGridView1.Size = new System.Drawing.Size(752, 379);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -681,12 +551,174 @@
             this.statusapplicationDataGridViewTextBoxColumn.Name = "statusapplicationDataGridViewTextBoxColumn";
             this.statusapplicationDataGridViewTextBoxColumn.Width = 125;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // statistic_panel
+            // 
+            this.statistic_panel.BackColor = System.Drawing.Color.White;
+            this.statistic_panel.Controls.Add(this.lb3);
+            this.statistic_panel.Controls.Add(this.lb2);
+            this.statistic_panel.Controls.Add(this.lb1);
+            this.statistic_panel.Controls.Add(this.label9);
+            this.statistic_panel.Location = new System.Drawing.Point(247, 162);
+            this.statistic_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statistic_panel.Name = "statistic_panel";
+            this.statistic_panel.Size = new System.Drawing.Size(694, 314);
+            this.statistic_panel.TabIndex = 29;
+            this.statistic_panel.Visible = false;
+            // 
+            // lb3
+            // 
+            this.lb3.AutoSize = true;
+            this.lb3.BackColor = System.Drawing.Color.White;
+            this.lb3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb3.ForeColor = System.Drawing.Color.Black;
+            this.lb3.Location = new System.Drawing.Point(15, 188);
+            this.lb3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb3.Name = "lb3";
+            this.lb3.Size = new System.Drawing.Size(40, 29);
+            this.lb3.TabIndex = 25;
+            this.lb3.Text = "Т3\r\n";
+            // 
+            // lb2
+            // 
+            this.lb2.AutoSize = true;
+            this.lb2.BackColor = System.Drawing.Color.White;
+            this.lb2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb2.ForeColor = System.Drawing.Color.Black;
+            this.lb2.Location = new System.Drawing.Point(15, 142);
+            this.lb2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(40, 29);
+            this.lb2.TabIndex = 24;
+            this.lb2.Text = "Т2";
+            // 
+            // lb1
+            // 
+            this.lb1.AutoSize = true;
+            this.lb1.BackColor = System.Drawing.Color.White;
+            this.lb1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb1.ForeColor = System.Drawing.Color.Black;
+            this.lb1.Location = new System.Drawing.Point(15, 92);
+            this.lb1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(40, 29);
+            this.lb1.TabIndex = 23;
+            this.lb1.Text = "Т1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(181, 20);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(205, 39);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Статистика";
+            // 
+            // regist_panel
+            // 
+            this.regist_panel.BackColor = System.Drawing.Color.White;
+            this.regist_panel.Controls.Add(this.custom_button1);
+            this.regist_panel.Controls.Add(this.label3);
+            this.regist_panel.Controls.Add(this.label5);
+            this.regist_panel.Controls.Add(this.tb_password);
+            this.regist_panel.Controls.Add(this.tb_login);
+            this.regist_panel.Controls.Add(this.label6);
+            this.regist_panel.Location = new System.Drawing.Point(352, 142);
+            this.regist_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.regist_panel.Name = "regist_panel";
+            this.regist_panel.Size = new System.Drawing.Size(505, 314);
+            this.regist_panel.TabIndex = 28;
+            // 
+            // custom_button1
+            // 
+            this.custom_button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(72)))), ((int)(((byte)(94)))));
+            this.custom_button1.FlatAppearance.BorderSize = 0;
+            this.custom_button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(43)))), ((int)(((byte)(55)))));
+            this.custom_button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custom_button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.custom_button1.ForeColor = System.Drawing.Color.White;
+            this.custom_button1.Location = new System.Drawing.Point(130, 250);
+            this.custom_button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.custom_button1.Name = "custom_button1";
+            this.custom_button1.Size = new System.Drawing.Size(242, 37);
+            this.custom_button1.TabIndex = 25;
+            this.custom_button1.Text = "Войти";
+            this.custom_button1.UseVisualStyleBackColor = false;
+            this.custom_button1.Click += new System.EventHandler(this.custom_button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(110, 150);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 29);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Пароль";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(110, 73);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 29);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Логин";
+            // 
+            // tb_password
+            // 
+            this.tb_password.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tb_password.Location = new System.Drawing.Point(115, 181);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(278, 30);
+            this.tb_password.TabIndex = 22;
+            this.tb_password.UseSystemPasswordChar = true;
+            this.tb_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_password_KeyPress);
+            // 
+            // tb_login
+            // 
+            this.tb_login.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tb_login.Location = new System.Drawing.Point(113, 105);
+            this.tb_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_login.Name = "tb_login";
+            this.tb_login.Size = new System.Drawing.Size(278, 30);
+            this.tb_login.TabIndex = 21;
+            this.tb_login.TextChanged += new System.EventHandler(this.tb_login_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(213, 21);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 39);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Вход";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1334, 711);
+            this.ClientSize = new System.Drawing.Size(1000, 578);
             this.Controls.Add(this.regist_panel);
             this.Controls.Add(this.statistic_panel);
             this.Controls.Add(this.panel2);
@@ -694,8 +726,9 @@
             this.Controls.Add(this.table_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1350, 750);
-            this.MinimumSize = new System.Drawing.Size(1350, 750);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1016, 617);
+            this.MinimumSize = new System.Drawing.Size(1016, 617);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главное меню";
@@ -713,13 +746,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             this.table_panel.ResumeLayout(false);
             this.table_panel.PerformLayout();
+            this.gradient_panel_tabel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.statistic_panel.ResumeLayout(false);
             this.statistic_panel.PerformLayout();
             this.regist_panel.ResumeLayout(false);
             this.regist_panel.PerformLayout();
-            this.gradient_panel_tabel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
