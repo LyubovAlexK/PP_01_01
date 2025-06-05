@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="592dp"
+        android:text="Cтатус заявки"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+android:id="@+id/button8"
+android:layout_width="134dp"
+android:layout_height="48dp"
+android:backgroundTint="#03A9F4"
+android:onClick="onClick_back"
+android:text="Вернуться"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.942"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.976" />
+
+<TextView
+android:id="@+id/textView3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="34sp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.039" />
+
+<TableLayout
+android:id="@+id/table"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#3F51B5"
+android:padding="1dp"
+android:stretchColumns="*"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.414"
+tools:ignore="MissingConstraints">
+
+<TableRow
+    android:layout_margin="1dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="1" />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="2" />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="3" />
+</TableRow>
+
+<TableRow
+    android:layout_margin="1dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+</TableRow>
+
+<TableRow
+    android:layout_margin="1dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+</TableRow>
+
+<TableRow
+    android:layout_margin="1dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+</TableRow>
+
+<TableRow
+    android:layout_margin="1dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+</TableRow>
+
+<TableRow
+    android:layout_margin="1dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+
+    <TextView
+        android:layout_margin="1dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text=" " />
+</TableRow>
+</TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
